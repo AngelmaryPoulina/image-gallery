@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Anime Gallery</h1>
+    </header>
+    <aside class="filters">
+      <button class="filter-btn" data-filter="all">All animes</button>
+      <button class="filter-btn" data-filter="naruto">Naruto</button>
+      <button class="filter-btn" data-filter="demon-slayer">
+        Demon Slayer
+      </button>
+      <button class="filter-btn" data-filter="onepiece">One Piece</button>
+      <button class="filter-btn" data-filter="haikyuu">Haikyuu!!</button>
+    </aside>
+    <div class="not-child" id="overlay">
+      <div style="width: 60%;"><button class="close" onclick="hidePop()">X</button></div>
+      <img id="popImage" alt="" />
+    </div>
+
+    <div class="container">
+      <div class="child" id="naruto">
+        <img src="img-2.jpg" alt="kurama" onclick="showpop(this)" />
+        <h5 class="title">Kurama</h5>
+      </div>
+      <div class="child" id="demon-slayer">
+        <img src="img-6.jpg" alt="tanjiro" onclick="showpop(this)" />
+        <h5>Kamado Tanjiro</h5>
+      </div>
+      <div class="child" id="onepiece">
+        <img src="img-13.jpg" alt="luffy" onclick="showpop(this)" />
+        <h5>Luffy</h5>
+      </div>
+      <div class="child" id="haikyuu">
+        <img src="img-15.jpg" alt="hinata shoyo" onclick="showpop(this)" />
+        <h5>Hinata Shoyo</h5>
+      </div>
+      <div class="child" id="demon-slayer">
+        <img src="img-7.jpg" alt="nezuko" onclick="showpop(this)" />
+        <h5>Nezuko</h5>
+      </div>
+      <div class="child" id="haikyuu">
+        <img src="img-16.jpg" alt="kageyama-shoyo" />
+        <h5>Kageyama-Shoyo</h5>
+      </div>
+      <div class="child" id="naruto">
+        <img src="img-3.jpg" alt="kakashi" onclick="showpop(this)" />
+        <h5>Kakashi</h5>
+      </div>
+      <div class="child" id="onepiece">
+        <img src="img-10.jpg" alt="Zoro" onclick="showpop(this)" />
+        <h5>Zoro</h5>
+      </div>
+      <div class="child" id="onepiece">
+        <img src="img-11.jpg" alt="sanji" onclick="showpop(this)" />
+        <h5>Sanji</h5>
+      </div>
+      <div class="child" id="demon-slayer">
+        <img src="img-8.jpg" alt="Zenitsu" onclick="showpop(this)" />
+        <h5>Zenitsu</h5>
+      </div>
+      <div class="child" id="onepiece">
+        <img src="img-12.jpg" alt="chopper" onclick="showpop(this)" />
+        <h5>Chopper</h5>
+      </div>
+      <div class="child" id="naruto">
+        <img src="img-5.jpg" alt="hinata-hyuga" onclick="showpop(this)" />
+        <h5>Hinata Hyuga</h5>
+      </div>
+      <div class="child" id="demon-slayer">
+        <img src="img-9.jpg" alt="inosuke" onclick="showpop(this)" />
+        <h5>Inosuke</h5>
+      </div>
+      <div class="child" id="onepiece">
+        <img src="img-14.jpg" alt="ace" onclick="showpop(this)" />
+        <h5>Ace</h5>
+      </div>
+      <div class="child" id="naruto">
+        <img src="img-4.jpg" alt="sensei" onclick="showpop(this)" />
+        <h5>Sensei</h5>
+      </div>
+    </div>
+  </body>
+</html>

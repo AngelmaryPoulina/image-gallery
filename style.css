@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.not-child {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.11);
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#popImage {
+  width: 60%;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    padding: 2px;
+    width: 30px;
+    font-size: 15px;
+    color: white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+
+}
+body {
+  /* background-image:url(https://wallpapercave.com/wp/wp2771916.jpg) ; */
+  background-image: url("https://sm.ign.com/t/ign_in/photo/default/demon-slayer-moment-1-1630545807943_e89u.1280.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+  background-size: cover;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: 550;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+h5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.546);
+  border-radius: 13px;
+  padding: 6px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(100%);
+}
+.child {
+  position: relative;
+  width: 300px;
+  height: 350px;
+}
+
+.child:hover h5 {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.child:hover {
+  border-radius: 15px;
+  transition: 1s;
+  box-shadow: rgba(250, 247, 247, 0.886) 0px 54px 55px,
+    rgba(250, 247, 247, 0.879) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(232, 224, 224, 0.767) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.filter-btn {
+  padding: 7px;
+  border-radius: 3px;
+  margin-left: 3px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+.filter-btn:hover {
+  background-color: aquamarine;
+  color: black;
+}
+.filter-btn:active {
+  background-color: lightslategray;
+}
+.container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.container .search-box {
+  position: relative;
+  height: 42px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.search-box input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #323334;
+  padding: 0 15px 0 45px;
+  color: #fff;
+  border-radius: 6px;
+}
+.search-box i {
+  position: absolute;
+  z-index: 2;
+  color: #999;
+  top: 50%;
+  left: 15px;
+  font-size: 20px;
+  transform: translateY(-50%);
+}
+
+.child {
+  margin: 8px;
+}
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.2s linear;
+}
+
+.not-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#view {
+  width: 60%;
+}
